@@ -353,7 +353,8 @@ func (u *Uploader) getSliceSize(fileSize int64) (int64, error) {
 	if userInfo.VipType == 1 { //普通会员
 		sliceSize = 16777216 //16M
 	} else if userInfo.VipType == 2 { //超级会员
-		sliceSize = 33554432 //32M
+		sliceSize = 16777216 //32M
+		// sliceSize = 33554432 //32M
 	}
 
 	if fileSize <= sliceSize { //无须切片

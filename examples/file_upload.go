@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/jsyzchen/pan/file"
+
+	"github.com/beshrek/pan/file"
 )
 
 func main() {
-	accessToken := "122.b0a9ab31cc24b429d460cd3ce1f1af97.Yn53jGAwd_1elGgODFvYl1sp9qOYVUDRiVawin5.tbNcEw"
+	accessToken := "121.dc9cb720b7acca907f353df94d1c8a8d.YgobnAZMu1SAW5e0JMv4bAV6vERmGjONyI1dfAA.2mMfzA"
 	path := "/apps/书梯/CHSS.mkv"
-	localFilePath := "/Download/CHSS.mkv"
+	localFilePath := `d:\tmp\20221026444-4套798店伊伊-0000.mp4`
 	fileUploader := file.NewUploader(accessToken, path, localFilePath)
 	res, err := fileUploader.Upload()
 	if err != nil {

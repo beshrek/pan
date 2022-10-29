@@ -1,8 +1,9 @@
 package file
 
 import (
-	"github.com/jsyzchen/pan/conf"
 	"testing"
+
+	"github.com/beshrek/pan/conf"
 )
 
 func TestUpload(t *testing.T) {

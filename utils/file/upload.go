@@ -2,7 +2,7 @@ package file
 
 import (
 	"bytes"
-	"github.com/jsyzchen/pan/utils/httpclient"
+	"github.com/beshrek/pan/utils/httpclient"
 	"io"
 	"io/ioutil"
 	"log"
@@ -13,14 +13,14 @@ import (
 )
 
 type Uploader struct {
-	Url string
+	Url      string
 	FilePath string
 }
 
 //NewFileUploader
 func NewFileUploader(url, filePath string) *Uploader {
 	return &Uploader{
-		Url: url,
+		Url:      url,
 		FilePath: filePath,
 	}
 }
